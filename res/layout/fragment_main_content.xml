@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xy.smartcity.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="@string/tab_home" />
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_news"
+            android:text="@string/tab_news" />
+
+        <RadioButton
+            android:id="@+id/rb_smart_sevice"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_smart_service"
+            android:text="@string/tab_smart_service" />
+
+        <RadioButton
+            android:id="@+id/rb_affairs"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_affairs"
+            android:text="@string/tab_affairs" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_tab_setting"
+            android:text="@string/tab_setting" />
+    </RadioGroup>
+
+</LinearLayout>
